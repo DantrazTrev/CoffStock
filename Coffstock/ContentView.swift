@@ -8,9 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var name = "Dante"
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Text("Hei, \(name)!").fontWeight(.regular).padding().foregroundColor(.green).background(.indigo)
+            TextField("Yo Sup?",text:$name)
+            HStack{
+                Text("Hei, Franike!").padding().opacity(0.6)
+                    Text("Hei, Destuchland!").padding()
+            }
+        }
+        
+        
+
+           
     }
 }
 
