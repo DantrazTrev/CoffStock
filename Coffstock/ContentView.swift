@@ -8,25 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var name = "Dante"
+  
     var body: some View {
         VStack {
-            Text("Hei, \(name)!").fontWeight(.regular).padding().foregroundColor(.green).background(.indigo)
-            TextField("Yo Sup?",text:$name)
-            HStack{
-                Text("Hei, Franike!").padding().opacity(0.6)
-                    Text("Hei, Destuchland!").padding()
-            }
+                Offer(title: "$50 off", descr: "Maybe lol, i just code")
         }
-        
-        
+    }
 
            
     }
-}
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+            
+        }
     }
 }

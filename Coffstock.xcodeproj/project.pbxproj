@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B462FA6A281DD8D800267488 /* Offers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B462FA69281DD8D800267488 /* Offers.swift */; };
 		B46559A32814A7310026FFD8 /* CoffstockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46559A22814A7310026FFD8 /* CoffstockApp.swift */; };
 		B46559A52814A7310026FFD8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46559A42814A7310026FFD8 /* ContentView.swift */; };
 		B46559A72814A7340026FFD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B46559A62814A7340026FFD8 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B462FA69281DD8D800267488 /* Offers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offers.swift; sourceTree = "<group>"; };
 		B465599F2814A7310026FFD8 /* Coffstock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coffstock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B46559A22814A7310026FFD8 /* CoffstockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffstockApp.swift; sourceTree = "<group>"; };
 		B46559A42814A7310026FFD8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				B46559A22814A7310026FFD8 /* CoffstockApp.swift */,
+				B462FA69281DD8D800267488 /* Offers.swift */,
 				B46559A42814A7310026FFD8 /* ContentView.swift */,
 				B46559A62814A7340026FFD8 /* Assets.xcassets */,
 				B46559A82814A7340026FFD8 /* Preview Content */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B462FA6A281DD8D800267488 /* Offers.swift in Sources */,
 				B46559A52814A7310026FFD8 /* ContentView.swift in Sources */,
 				B46559A32814A7310026FFD8 /* CoffstockApp.swift in Sources */,
 			);
@@ -264,9 +268,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Coffstock/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -281,6 +287,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dantraztrev.protoype.Coffstock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -292,9 +299,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Coffstock/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -309,6 +318,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dantraztrev.protoype.Coffstock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
