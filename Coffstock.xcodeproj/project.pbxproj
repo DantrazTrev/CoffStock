@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B462FA6A281DD8D800267488 /* Offers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B462FA69281DD8D800267488 /* Offers.swift */; };
+		B462FA6C281DE23000267488 /* OffersPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B462FA6B281DE23000267488 /* OffersPage.swift */; };
 		B46559A32814A7310026FFD8 /* CoffstockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46559A22814A7310026FFD8 /* CoffstockApp.swift */; };
 		B46559A52814A7310026FFD8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46559A42814A7310026FFD8 /* ContentView.swift */; };
 		B46559A72814A7340026FFD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B46559A62814A7340026FFD8 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		B462FA69281DD8D800267488 /* Offers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Offers.swift; sourceTree = "<group>"; };
+		B462FA6B281DE23000267488 /* OffersPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersPage.swift; sourceTree = "<group>"; };
 		B465599F2814A7310026FFD8 /* Coffstock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coffstock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B46559A22814A7310026FFD8 /* CoffstockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffstockApp.swift; sourceTree = "<group>"; };
 		B46559A42814A7310026FFD8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			children = (
 				B46559A22814A7310026FFD8 /* CoffstockApp.swift */,
 				B462FA69281DD8D800267488 /* Offers.swift */,
+				B462FA6B281DE23000267488 /* OffersPage.swift */,
 				B46559A42814A7310026FFD8 /* ContentView.swift */,
 				B46559A62814A7340026FFD8 /* Assets.xcassets */,
 				B46559A82814A7340026FFD8 /* Preview Content */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B462FA6A281DD8D800267488 /* Offers.swift in Sources */,
+				B462FA6C281DE23000267488 /* OffersPage.swift in Sources */,
 				B46559A52814A7310026FFD8 /* ContentView.swift in Sources */,
 				B46559A32814A7310026FFD8 /* CoffstockApp.swift in Sources */,
 			);

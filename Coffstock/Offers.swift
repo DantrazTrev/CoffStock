@@ -11,10 +11,17 @@ struct Offer: View {
     var title = ""
     var descr = ""
     var body: some View {
-        VStack{
+        ZStack{
+            Image("BackgroundPattern")
+                .frame(maxWidth:.infinity ,maxHeight: 200)
+                .clipped()
+            VStack{
             Text("\(title)").padding().font(.title)
-            Text("\(descr)")
+                .background(Color("CardBackground"))
+            Text("\(descr)").padding().background(Color("CardBackground"))
         }
+        }
+        
     }
 }
 

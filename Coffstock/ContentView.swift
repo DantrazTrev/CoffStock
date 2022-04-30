@@ -11,7 +11,7 @@ struct ContentView: View {
   
     var body: some View {
         VStack {
-                Offer(title: "$50 off", descr: "Maybe lol, i just code")
+              OffersPage()
         }
     }
 
