@@ -11,7 +11,27 @@ struct ContentView: View {
   
     var body: some View {
         VStack {
-              OffersPage()
+            TabView{
+             Text("Home")
+                    .tabItem{
+                        Image(systemName: "cup.and.saucer")
+                        Text("Home")
+                    }
+              OffersPage()  .tabItem{
+                  Image(systemName: "tag")
+                  Text("Offers")
+              }
+             
+             Text("Orders")  .tabItem{
+                 Image(systemName: "cart")
+                 Text("Orders")
+             }
+            Text("Info")
+                .tabItem{
+                 Image(systemName: "info")
+                 Text("Info")
+             }
+            }
         }
     }
 
