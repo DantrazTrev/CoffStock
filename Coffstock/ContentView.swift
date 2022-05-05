@@ -10,9 +10,9 @@ import SwiftUI
 struct ContentView: View {
   
     var body: some View {
-        VStack {
             TabView{
-             Text("Home")
+       
+                MenuPage()
                     .tabItem{
                         Image(systemName: "cup.and.saucer")
                         Text("Home")
@@ -22,16 +22,15 @@ struct ContentView: View {
                   Text("Offers")
               }
              
-             Text("Orders")  .tabItem{
+             OrderPage()  .tabItem{
                  Image(systemName: "cart")
                  Text("Orders")
              }
-            Text("Info")
+            InfoPage()
                 .tabItem{
                  Image(systemName: "info")
                  Text("Info")
              }
-            }
         }
     }
 
