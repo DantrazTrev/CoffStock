@@ -17,6 +17,8 @@
 		B46559A52814A7310026FFD8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46559A42814A7310026FFD8 /* ContentView.swift */; };
 		B46559A72814A7340026FFD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B46559A62814A7340026FFD8 /* Assets.xcassets */; };
 		B46559AA2814A7340026FFD8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B46559A92814A7340026FFD8 /* Preview Assets.xcassets */; };
+		B48A3907282433F600DCE402 /* LikeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48A3906282433F600DCE402 /* LikeManager.swift */; };
+		B48A39092824348400DCE402 /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48A39082824348400DCE402 /* LikeButton.swift */; };
 		B495C1CE28232DC600D3F898 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B495C1CD28232DC600D3F898 /* Category.swift */; };
 		B495C1D028232DCD00D3F898 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = B495C1CF28232DCD00D3F898 /* Product.swift */; };
 		B495C1D2282330C900D3F898 /* MenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B495C1D1282330C900D3F898 /* MenuManager.swift */; };
@@ -39,6 +41,8 @@
 		B46559A62814A7340026FFD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B46559A92814A7340026FFD8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B48A39052824307F00DCE402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B48A3906282433F600DCE402 /* LikeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeManager.swift; sourceTree = "<group>"; };
+		B48A39082824348400DCE402 /* LikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
 		B495C1CD28232DC600D3F898 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		B495C1CF28232DCD00D3F898 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		B495C1D1282330C900D3F898 /* MenuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuManager.swift; sourceTree = "<group>"; };
@@ -65,6 +69,7 @@
 				B462FA69281DD8D800267488 /* Offer.swift */,
 				B495C1D52823D3CA00D3F898 /* OrderItem.swift */,
 				B4B41097282006F60043FEB8 /* Item.swift */,
+				B48A39082824348400DCE402 /* LikeButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -127,6 +132,7 @@
 				B495C1CF28232DCD00D3F898 /* Product.swift */,
 				B495C1D1282330C900D3F898 /* MenuManager.swift */,
 				B495C1D3282330EA00D3F898 /* CartManager.swift */,
+				B48A3906282433F600DCE402 /* LikeManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -215,9 +221,11 @@
 				B462FA6C281DE23000267488 /* OffersPage.swift in Sources */,
 				B408B881281FFA71001ED7BD /* InfoPage.swift in Sources */,
 				B4B41098282006F60043FEB8 /* Item.swift in Sources */,
+				B48A3907282433F600DCE402 /* LikeManager.swift in Sources */,
 				B495C1D028232DCD00D3F898 /* Product.swift in Sources */,
 				B495C1D62823D3CA00D3F898 /* OrderItem.swift in Sources */,
 				B43AB96528203252009628C6 /* Details.swift in Sources */,
+				B48A39092824348400DCE402 /* LikeButton.swift in Sources */,
 				B408B87F281FFA5E001ED7BD /* MenuPage.swift in Sources */,
 				B46559A52814A7310026FFD8 /* ContentView.swift in Sources */,
 				B46559A32814A7310026FFD8 /* CoffstockApp.swift in Sources */,
@@ -350,7 +358,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Coffstock/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 833T8QYBTZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Coffstock/Info.plist;
@@ -368,7 +376,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -381,7 +389,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Coffstock/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 833T8QYBTZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Coffstock/Info.plist;
@@ -399,7 +407,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

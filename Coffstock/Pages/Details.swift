@@ -52,6 +52,9 @@ struct Details: View {
 
         }
             .navigationTitle(product.name)
+            .toolbar {
+                          LikeButton(product: product)
+                      }
         
     }
 }
@@ -59,5 +62,6 @@ struct Details: View {
 struct Details_Previews: PreviewProvider {
     static var previews: some View {
         Details(product:Product(id: 1, name: "Coffee", price: 2.55, description: "Just an hot coffee mate", image: "")).environmentObject(CartManager())
+            .environmentObject(LikesManager())
     }
 }

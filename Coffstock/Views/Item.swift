@@ -23,9 +23,11 @@ struct Item: View {
                         .bold()
                     Text("$ \(product.price,specifier: "%.2f")")
                         .font(.caption)
-
+    
+                      
                 }.padding(8)
                 Spacer()
+                LikeButton(product: product)
             }
         }
         .background(Color("SurfaceBackground"))
@@ -36,7 +38,7 @@ struct Item: View {
 
 struct Item_Previews: PreviewProvider {
     static var previews: some View {
-        Item(product:Product(id: 1, name: "Coffee", price: 2.55, description: "Just an hot coffee mate", image: ""))
+        Item(product:Product(id: 1, name: "Coffee", price: 2.55, description: "Just an hot coffee mate", image: "")).environmentObject(LikesManager())
             
 
     }
