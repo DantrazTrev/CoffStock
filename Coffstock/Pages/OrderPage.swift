@@ -14,6 +14,7 @@ struct OrderPage: View {
     
     @State var name = ""
     @State var phone = ""
+    @State var showingAlert=false
     
 
     var body: some View {
@@ -57,8 +58,7 @@ struct OrderPage: View {
                         HStack {
                             Spacer()
                             Button("Place Order") {
-                                //TODO: Validation
-//                                orderConfirmed = true
+                               showingAlert=true
                             }
                                 .padding()
                                 .frame(width: 250.0)
@@ -83,6 +83,11 @@ struct OrderPage: View {
 //                    Text("Your order is being prepared.")
 //                        .font(.title)
 //                })
+                .alert("I don't do deliveries mate", isPresented: $showingAlert) {
+                          Button("Okie dokie", role: .cancel) {
+                              showingAlert=false
+                          }
+                      }
             }
         }
     }

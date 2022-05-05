@@ -15,29 +15,20 @@ struct MenuPage: View {
             VStack{
             List{
                 ForEach(menuManager.menu) { category in
-                    if category.filteredItems(text: search).count > 0 {
-                        Text(category.name)
-                            .frame( maxWidth:.infinity,alignment:.leading)
-                            .font(.headline)
-                            .foregroundColor(Color("Secondary"))
-                      
-                    }
-                    
-                    ForEach(category.filteredItems(text: search)) { item in
-                        ZStack {
-                            NavigationLink(destination: Details(product: item)) {
-                                EmptyView()
-                            }.opacity(0)
-                            Item(product: item)
-                                .padding(.top)
-                                .padding(.leading)
-                                .padding(.bottom, 10)
+                                   Text(category.name)
+                                   ForEach(category.products){product in
+                                       NavigationLink {
+                                           Details(product:product)
+                                       } label: {
+                                           Item(product:product)
+                                       }
 
-                        }
+                                       
+                                   }
+
                         
-                    }
                 }
-                .searchable(text: $search)
+               
                 .listRowBackground(Color.clear)
                 .listRowSeparator(.hidden)
            
